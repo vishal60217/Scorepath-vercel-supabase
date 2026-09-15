@@ -1,8 +1,0 @@
-ScorePath final rebuild validation:
-- Node syntax: PASS
-- JSON config: PASS
-- Vercel architecture: Express root + public assets
-- API rewrite removed; Express owns /api/*
-- Supabase transaction pooler support: PASS
-- Health endpoint initializes and verifies schema: PASS
-- Payment, auth, admin, lessons, progress, tests routes present
