@@ -1,0 +1,20 @@
+{
+  "name": "scorepath-vercel-supabase",
+  "version": "7.0.0",
+  "private": true,
+  "description": "ScorePath IELTS/PTE LMS - production Express app for Vercel + Supabase",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "razorpay": "^2.9.6",
+    "pg": "^8.16.3"
+  }
+}
