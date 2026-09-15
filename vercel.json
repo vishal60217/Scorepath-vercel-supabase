@@ -1,16 +1,14 @@
 {
-  "version": 2,
-  "rewrites": [
-    { "source": "/api/:path*", "destination": "/api/index.js" }
-  ],
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "headers": [
     {
-      "source": "/assets/(.*)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
-    },
-    {
       "source": "/(.*\\.(?:css|js|svg|png|jpg|jpeg|webp|ico))",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=86400" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
     }
   ]
 }
